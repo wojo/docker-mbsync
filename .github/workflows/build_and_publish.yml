@@ -10,6 +10,8 @@ on:
 
 jobs:
   build:
+    # This inherited publisher targets upstream-maintainer resources.
+    if: github.repository == 'JakeWharton/docker-mbsync'
     runs-on: ubuntu-latest
 
     steps:
